@@ -1,0 +1,60 @@
+/* src/Services.css */
+
+.services-container {
+    padding: 40px;
+    background-color: #f5faff;
+    text-align: center;
+  }
+  
+  .services-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .services-description {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between the cards */
+    margin-bottom: 40px; /* Add space below the cards */
+  }
+  
+  .counter-section {
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #ffffff;
+  }
+  
+  .counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .counter-item {
+    text-align: center;
+    font-size: 36px;
+    color: #005f8c; /* Adjust the color to match your design */
+  }
+  
+  .counter-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0074d9; /* Adjust the color to match your design */
+  }
+  
+  .counter-title {
+    font-size: 16px;
+    color: #0074d9; /* Adjust the color to match your design */
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

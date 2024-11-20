@@ -1,0 +1,120 @@
+/* Contact Form */
+.contact-form {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    background-color: white; /* White background for the form */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  /* Modal Header */
+  .contact-form h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Dark text color for the heading */
+  }
+  
+  /* Form Labels */
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #555; /* Slightly lighter text color for labels */
+  }
+  
+  /* Input Fields */
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="email"],
+  .contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light grey background for inputs */
+    color: #333; /* Dark text color for input */
+  }
+  
+  /* Phone Input Flex */
+  .phone-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Country Code */
+  .country-code {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    color: #333; /* Dark text color for the country code */
+  }
+  
+  /* Phone Input Field */
+  .phone-input input {
+    flex: 1;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* Close Icon Button */
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #D9534F; /* Red color for the close icon */
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #333;
+  }
+  
+  /* Connect with Us Button (Keep your button design) */
+  .connect-button {
+    position: absolute;
+    top: 90%; /* Adjust based on where you want the button */
+    left: 3%; /* Adjust based on where you want the button */
+    background-color: #D9534F;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    z-index: 999;
+  }
+  
+  .connect-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .connect-button:focus {
+    outline: none;
+  }
+  

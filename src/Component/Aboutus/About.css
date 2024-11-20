@@ -1,0 +1,72 @@
+.aboutus_page {
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center align the content */
+  padding: 20px; /* Add padding for spacing */
+  font-family: Arial, sans-serif; /* Set a clean font */
+  line-height: 1.6; /* Improve readability */
+}
+
+.aboutus_page h1 {
+  font-size: 2.5rem; /* Larger font for the main title */
+  text-align: center; /* Center align the title */
+  margin-bottom: 20px; /* Space below the title */
+  color: #2c3e50; /* Darker color for the title */
+}
+
+.aboutus_page p {
+  font-size: 1.1rem; /* Font size for the paragraph */
+  margin-bottom: 20px; /* Space below paragraphs */
+  color: #34495e; /* A softer color for the paragraph text */
+}
+
+.aboutus_detail {
+  margin-bottom: 30px; /* Space between detail sections */
+  padding: 15px; /* Add padding around detail sections */
+  border: 1px solid #ecf0f1; /* Light border for separation */
+  border-radius: 5px; /* Rounded corners for the detail box */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.aboutus_detail h2 {
+  font-size: 1.8rem; /* Size for the subheadings */
+  color: #2980b9; /* Color for the subheadings */
+  margin-bottom: 10px; /* Space below subheadings */
+}
+
+.aboutus_detail ul {
+  list-style-type: disc; /* Disc style for unordered lists */
+  padding-left: 20px; /* Indentation for the list */
+}
+
+.aboutus_detail li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+@media (max-width: 768px) {
+  /* Responsive adjustments for smaller screens */
+  .aboutus_page {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+  .aboutus_page h1 {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+  .aboutus_detail h2 {
+    font-size: 1.5rem; /* Smaller subheading on mobile */
+  }
+}
+/* Button Styling */
+.btn-primary {
+background-color: #08b66e; /* Blue color similar to the one in your image */
+color: white; /* White text */
+padding: 5px 10px; /* Padding around the text */
+border: none; /* Remove border */
+border-radius: 25px; /* Rounded corners */
+font-size: 16px; /* Text size */
+cursor: pointer; /* Cursor style on hover */
+transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn-primary:hover {
+background-color: #0056b3; /* Darker blue on hover */
+}
+  

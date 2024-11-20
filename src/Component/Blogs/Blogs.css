@@ -1,0 +1,73 @@
+/* Blogs.css */
+
+/* Container Styling */
+.blogs-container {
+    min-height: 100vh;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styling */
+  .blogs-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .blogs-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .blogs-header p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Cards Container Styling */
+  .blogs-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for a 3x2 layout */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Blog Card Styling */
+  .blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
