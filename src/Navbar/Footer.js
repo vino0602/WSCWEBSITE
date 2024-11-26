@@ -1,12 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom"; 
+
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-content">
         
-        {/* About Section */}
         <div className="footer-logo-section">
           <h1 className="footer-logo">WeStayClose</h1>
           <p className="footer-text">
@@ -14,27 +15,23 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* About Us Links */}
         <div className="footer-links-section">
           <h3>About Us</h3>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#our-team">Our Team</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Ourservices">Services</a></li>
+            <li><a href="/Ourteam">OurTeam</a></li>
           </ul>
         </div>
 
-        {/* Services Links */}
         <div className="footer-links-section">
-          <h3>Services</h3>
+          <h3>Privacy</h3>
           <ul>
-            <li><a href="#lab-test">Lab Test</a></li>
-            <li><a href="#health-check">Health Check</a></li>
-            <li><a href="#heart-health">Heart Health</a></li>
+            <li><Link to="/privacy-policy" className="footer-text">Privacy Policy</Link></li> 
+            <li><Link to="/terms-and-conditions" className="footer-text">Terms And Condition</Link></li> 
           </ul>
         </div>
 
-        {/* Contact Us Section */}
         <div className="footer-links-section">
           <h3>Contact Us</h3>
           <ul>
@@ -44,9 +41,21 @@ const Footer = () => {
             <li className="footer-text">+91 97890 86627</li>
           </ul>
         </div>
-      </div>
 
-      {/* Footer Copyright */}
+        <div className="footer-links-section app-section">
+          <h3>Get the App</h3>
+          <div className="app-links">
+         <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+        
+         </a>
+         </div>
+        <div className="app-links">
+       <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+    
+  </a>
+</div>
+        </div>
+      </div>
       <div className="footer-copyright">
         <p>Copyright © 2024 - All rights reserved By <span className="font-bold">WeStayClose</span></p>
       </div>

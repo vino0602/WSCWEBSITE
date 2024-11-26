@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ContactForm.css'; 
+import './ContactForm.css';
 
 const ContactForm = ({ closeModal }) => {
   const [formData, setFormData] = useState({
@@ -10,34 +10,24 @@ const ContactForm = ({ closeModal }) => {
     heardAboutUs: '',
   });
 
-  // Handle form field changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    closeModal(); // Close the modal after submission
+    closeModal(); 
   };
-
-  // Dropdown options
-  const exploringWSCOptions = ['Myself or spouse', 'For my parents or an elder'];
-  const heardAboutUsOptions = [
-    'Search Engine (Google, Bing, etc.)',
-    'Social Media (FB, Insta, etc.)',
-    'YouTube',
-    'Friends or Family',
-    'Others',
-  ];
 
   return (
     <div className="contact-form">
       <span className="close-icon" onClick={closeModal}>×</span>
       <h2>2000+ Seniors' Sons & Daughters Have Chosen WSC. Join Us Today!</h2>
       <form onSubmit={handleSubmit}>
+        {/* Form fields */}
+        {/* Full Name */}
         <label>
           Full Name
           <input
@@ -49,7 +39,7 @@ const ContactForm = ({ closeModal }) => {
             required
           />
         </label>
-
+        {/* Mobile Number */}
         <label>
           Mobile Number
           <div className="phone-input">
@@ -64,7 +54,7 @@ const ContactForm = ({ closeModal }) => {
             />
           </div>
         </label>
-
+        {/* Email */}
         <label>
           Email
           <input
@@ -76,7 +66,7 @@ const ContactForm = ({ closeModal }) => {
             required
           />
         </label>
-
+        {/* Exploring WSC For */}
         <label>
           Exploring WSC For
           <select
@@ -86,14 +76,14 @@ const ContactForm = ({ closeModal }) => {
             required
           >
             <option value="">Exploring WSC for?</option>
-            {exploringWSCOptions.map((option, index) => (
+            {['Myself or spouse', 'For my parents or an elder'].map((option, index) => (
               <option key={index} value={option}>
                 {option}
               </option>
             ))}
           </select>
         </label>
-
+        {/* How Did You Hear About Us */}
         <label>
           How Did You Hear About Us?
           <select
@@ -103,14 +93,20 @@ const ContactForm = ({ closeModal }) => {
             required
           >
             <option value="">How did you hear about us?</option>
-            {heardAboutUsOptions.map((option, index) => (
+            {[
+              'Search Engine (Google, Bing, etc.)',
+              'Social Media (FB, Insta, etc.)',
+              'YouTube',
+              'Friends or Family',
+              'Others',
+            ].map((option, index) => (
               <option key={index} value={option}>
                 {option}
               </option>
             ))}
           </select>
         </label>
-
+        {/* Submit Button */}
         <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>

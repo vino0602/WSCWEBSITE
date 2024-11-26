@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchAllReviews, addReview } from "../services/ReviewsAPI"; // Adjust relative path
+import { fetchAllReviews, addReview } from "../APIS/ReviewsAPI"; // Adjust relative path
 
 const ReviewsManager = () => {
   const [reviews, setReviews] = useState([]);

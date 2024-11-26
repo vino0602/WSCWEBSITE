@@ -1,0 +1,63 @@
+/* Top Bar Styling */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9fdfd; /* Light background */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .top-bar .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #17ba9d; /* Teal color for text */
+  }
+  
+  .top-bar .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .top-bar .social-icons .icon {
+    background-color: #e6f7f9;
+    border-radius: 50%;
+    padding: 8px;
+    color: #17ba9d;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .top-bar .social-icons .icon:hover {
+    background-color: #17ba9d; /* Teal hover background */
+    color: #fff; /* White icon on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px 20px;
+    }
+  
+    .top-bar .contact-info {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .top-bar .social-icons {
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  

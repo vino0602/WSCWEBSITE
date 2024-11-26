@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchCookies, addCookie, deleteCookie } from "../services/CookiesAPI"; // Adjust relative path
+import { fetchCookies, addCookie, deleteCookie } from "../APIS/CookiesAPI"; // Adjust relative path
 
 const CookiesManager = () => {
   const [cookies, setCookies] = useState([]);

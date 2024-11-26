@@ -26,23 +26,26 @@ const Header = () => {
 
         {/* Desktop Navbar */}
         <nav className="nav-links">
-          <Link to="/" className="nav-item" onClick={closeMenu}>
+          <a href="/" className="nav-item" onClick={closeMenu}>
             Home
-          </Link>
-          <Link to="/About" className="nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#About" className="nav-item" onClick={closeMenu}>
             About
-          </Link>
-          <Link to="/Our services" className="nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#Ourservices" className="nav-item" onClick={closeMenu}>
             Services
-          </Link>
-          <Link to="/Package List" className="nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#PackageList" className="nav-item" onClick={closeMenu}>
             Package
-          </Link>
-          <Link to="/doctors" className="nav-item" onClick={closeMenu}>
-            Our Team
-          </Link>
-          <Link to="/Blog card" className="nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#Blogcard" className="nav-item" onClick={closeMenu}>
             Blogs
+          </a>
+          <a href="#Websitereview" className="nav-item" onClick={closeMenu}>
+            Reviews
+          </a>
+          <Link to="/Ourteam" className="nav-item" onClick={closeMenu}>
+            Our Team
           </Link>
           <Link to="/contactus" className="nav-item" onClick={closeMenu}>
             Contact
@@ -65,23 +68,26 @@ const Header = () => {
       {/* Mobile Menu */}
       {menu && (
         <div className="mobile-menu">
-          <Link to="/" className="mobile-nav-item" onClick={closeMenu}>
+          <a href="#home" className="mobile-nav-item" onClick={closeMenu}>
             Home
-          </Link>
-          <Link to="/About" className="mobile-nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#About" className="mobile-nav-item" onClick={closeMenu}>
             About
-          </Link>
-          <Link to="/Our services" className="mobile-nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#Ourservices" className="mobile-nav-item" onClick={closeMenu}>
             Services
-          </Link>
-          <Link to="/Package List" className="mobile-nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#PackageList" className="mobile-nav-item" onClick={closeMenu}>
             Package
-          </Link>
-          <Link to="/doctors" className="mobile-nav-item" onClick={closeMenu}>
-            Our Team
-          </Link>
-          <Link to="/Blog card" className="mobile-nav-item" onClick={closeMenu}>
+          </a>
+          <a href="#Blogcard" className="mobile-nav-item" onClick={closeMenu}>
             Blogs
+          </a>
+          <a href="#Websitereview" className="mobile-nav-item" onClick={closeMenu}>
+            Reviews
+          </a>
+          <Link to="/Ourteam" className="mobile-nav-item" onClick={closeMenu}>
+            Our Team
           </Link>
           <Link to="/contactus" className="mobile-nav-item" onClick={closeMenu}>
             Contact

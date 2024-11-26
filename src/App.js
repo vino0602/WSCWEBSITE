@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Approute from './Approute';
 
+import ScrollToTop  from './Navbar/ScrollToTop';
 import ChatBox from "./Component/Socialmedia/Chatbox";
-import GoogleReviews from "./Component/Socialmedia/GoogleReviews";
 import AboutList from "./Component/Aboutus/AboutList";
+import OurTeam from './Component/Ourteam/OurTeam';
 import ContactUs from "./Component/Contactus/ContactUs";
+import ContactForm from "./Component/Contactus/ContactForm";
+import TermsandCondition from "./Termsandcond/Termsandcondition";
+import PrivacyPolicy from "./Termsandcond/Privacypolicy";
 import Services1 from "./Component/Services/Services1";
 import Services2 from "./Component/Services/Services2";
 import Services3 from "./Component/Services/Services3";
@@ -19,17 +23,35 @@ import Blogs4 from "./Component/Blogs/Blogs4";
 import Blogs5 from "./Component/Blogs/Blogs5";
 import Blogs6 from "./Component/Blogs/Blogs6";
 
+import Cookies from './Component/cookies/Cookies';
+
+import TestConnection from './Component/TestConnection';
+
 import ReviewsManager from "./Component/ReviewsManager"; // Import ReviewsManager
 import CookiesManager from "./Component/CookiesManager"; // Import CookiesManager
 
 import './App.css';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    setIsModalOpen(true);
+  }, []);
+
+  const closeModal = () => {
+    setIsModalOpen(false); 
+  };
+
+
 return (
   <>
     <Routes>
       <Route path="/" element={<Approute />} />
       <Route path="/aboutus" element={<AboutList />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsandCondition />} />
+      <Route path="/ourteam" element={<OurTeam/>} />
       <Route path="/contactus" element={<ContactUs />} />
       <Route path="/Services1" element={<Services1 />} />
       <Route path="/Services2" element={<Services2 />} />
@@ -50,7 +72,12 @@ return (
       
       <Route path="*" element={<div>Page Not Found</div>} />
     </Routes>
-    <ChatBox/>
+
+    {isModalOpen && <ContactForm closeModal={closeModal} />}
+     <TestConnection />
+     <ChatBox />
+     <ScrollToTop />
+    <Cookies />
   </>
  );
 }

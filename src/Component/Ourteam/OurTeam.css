@@ -1,0 +1,33 @@
+.our-family-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; 
+  }
+  
+  .member-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .member-container.reverse-layout {
+    flex-direction: row-reverse;
+  }
+  
+  .member-container.default-layout {
+    flex-direction: row; 
+  }
+  
+  .description-container {
+    max-width: 500px; 
+    text-align: left;
+  }
+  
+  .family-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px; 
+  }
+  

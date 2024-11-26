@@ -1,81 +1,80 @@
 /* General styling for the About Us container */
 .about-us-container {
-    padding: 40px;
-    background-color: #ffffff;
-    min-height: 100vh; /* Ensure it covers the full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the content */
-  }
-  
-  /* Content wrapper for the image and text */
+  padding: 40px;
+  background-color: #ffffff;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+}
+
+/* Content wrapper for the image and text */
+.about-us-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Text container styling */
+.about-us-text {
+  flex: 2;
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+  order: 1; /* Ensure text is on the left side */
+}
+
+/* Image container styling */
+.about-us-image-container {
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 20px;
+  order: 2; /* Ensure image is on the right side */
+  margin-left: 80px; /* Increase this value to move images to the right */
+}
+
+.about-us-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  border: 5px solid #ffa500; /* Orange border around the image */
+}
+
+.about-us-image-2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  border: 5px solid #17BA9D; /* Teal border for the second image */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
   .about-us-content {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  /* Text container styling */
-  .about-us-text {
-    flex: 2;
-    font-size: 1.5rem;
-    color: #333;
-    line-height: 1.6;
-    text-align: left;
-    order: 1; /* Ensure text is on the left side */
-  }
-  
-  /* Image container styling */
-  .about-us-image-container {
-    flex: 2;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 20px;
-    order: 2; /* Ensure image is on the right side */
-    margin-left: 80px; /* Increase this value to move images to the right */
-  }
-  
-  .about-us-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    overflow: hidden;
-    border: 5px solid #ffa500; /* Orange border around the image */
-  }
-  
+
+  .about-us-image,
   .about-us-image-2 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    overflow: hidden;
-    border: 5px solid #17BA9D; /* Teal border for the second image */
+    width: 200px;
+    height: 200px;
   }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .about-us-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-us-image,
-    .about-us-image-2 {
-      width: 200px;
-      height: 200px;
-    }
-  
-    .about-us-heading {
-      font-size: 2rem;
-    }
-  
-    .about-us-text {
-      font-size: 1rem;
-      text-align: center;
-    }
+
+  .about-us-heading {
+    font-size: 2rem;
   }
-  
+
+  .about-us-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
